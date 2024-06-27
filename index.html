@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  
+
+        <div class="container">
+            <h1>Make Transaction</h1>
+            <form id="transaction-form" class="form" action="/" method="post">
+                <div>
+                    
+                    <label for="category" class="category">Category:</label>
+                    <select name="category" id="category">
+                        <option value="">Select</option>
+                        <option value="Credit">Credit</option>
+                        <option value="Debit">Debit</option>
+                    </select>
+                </div>
+                <div>
+                    
+                    <label for="amount">Amount:</label>
+                    <input min="0" type="number"  name="amount" id="amount" placeholder="Enter amount">
+                </div>
+                <div>
+                    
+                    <label for="remark">Remark:</label>
+                    <input type="text" name="remark" id="remark" placeholder="Remark">
+                </div>
+                <div>
+                    
+                    
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <button type="submit" value="Submit" class="button" id="submit">
+                    <span>Submit</span>
+                </button>
+            </form>
+            
+            <table  id="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Remark</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="1" class="Total">Total:</td>
+                        <td id="totalAmount" class="Total">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        
+    <script src="./home.js">
+       
+    </script>
+</body>
+</html>
