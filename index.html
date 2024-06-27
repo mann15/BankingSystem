@@ -15,7 +15,7 @@
                 <div>
                     
                     <label for="category" class="category">Category:</label>
-                    <select name="category" id="category">
+                    <select name="category" id="category" required>
                         <option value="">Select</option>
                         <option value="Credit">Credit</option>
                         <option value="Debit">Debit</option>
@@ -24,18 +24,18 @@
                 <div>
                     
                     <label for="amount">Amount:</label>
-                    <input min="0" type="number"  name="amount" id="amount" placeholder="Enter amount">
+                    <input min="0" type="number"  name="amount" id="amount" placeholder="Enter amount" required>
                 </div>
                 <div>
                     
                     <label for="remark">Remark:</label>
-                    <input type="text" name="remark" id="remark" placeholder="Remark">
+                    <input type="text" name="remark" id="remark" placeholder="Remark" required>
                 </div>
                 <div>
                     
                     
                     <label for="date">Date:</label>
-                    <input type="date" name="date" id="date">
+                    <input type="date" name="date" id="date" required>
                 </div>
                 <button type="submit" value="Submit" class="button" id="submit">
                     <span>Submit</span>
