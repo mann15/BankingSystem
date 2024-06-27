@@ -58,6 +58,7 @@ app.get("/transactions", async (req, res) => {
 
 app.post("/transactions", async (req, res) => {
   const transaction = new Transaction(req.body);
+  if(!transaction.amount || !transaction.category || !transaction.date) return res.status(400).send("All field are required");
   try {
     await transaction.save();
     res.status(201).json(transaction);
